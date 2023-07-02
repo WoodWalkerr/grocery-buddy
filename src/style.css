@@ -1,10 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap%27");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+}
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f8f8f8;
-  font-family: "Arial";
+  background-color: gray;
 }
 
 .grocery-buddy {
@@ -21,6 +28,7 @@
 
 h1 {
   margin-bottom: 2rem;
+  word-break: break-word; /* Added */
 }
 
 .input-section {
@@ -41,11 +49,13 @@ input {
   padding: 0.5rem;
   border: 1px solid #cccccc;
   border-radius: 4px;
+  font-size: 14px; /* Adjusted font size */
 }
 
 button {
   margin-left: 1rem;
   padding: 0.5rem 1rem;
+  font-size: 14px; /* Adjusted font size */
 
   color: #ffffff;
   border: none;
@@ -66,6 +76,7 @@ button {
   display: flex;
   align-items: center;
   font-weight: bold;
+  font-size: 14px; /* Adjusted font size */
 }
 
 .grocery-list li:last-child {
