@@ -14,7 +14,7 @@ const GroceryComponent = () => {
       setItem("");
       setErrors("");
     } else {
-      setErrors("Grocery item cannot be empty.");
+      setErrors("Grocery item cannot be empty...");
       inputRef.current.focus();
     }
   };
