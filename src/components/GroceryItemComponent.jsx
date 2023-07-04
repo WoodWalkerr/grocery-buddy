@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import PropTypes from 'prop-types';
+
 
 const GroceryItemComponent = ({ item, handleEditItem, handleDeleteItem }) => {
   const [isEditing, setIsEditing] = useState(false);
@@ -50,4 +52,9 @@ const GroceryItemComponent = ({ item, handleEditItem, handleDeleteItem }) => {
   );
 };
 
+GroceryItemComponent.propTypes = {
+  item: PropTypes.any,
+  handleEditItem: PropTypes.any,
+  handleDeleteItem: PropTypes.any,
+}
 export default GroceryItemComponent;
