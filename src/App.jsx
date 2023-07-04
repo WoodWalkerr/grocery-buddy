@@ -1,3 +1,4 @@
+import React from "react";
 import GroceryComponent from "./components/GroceryComponent";
 import "./style.css";
 
