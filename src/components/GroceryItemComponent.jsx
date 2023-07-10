@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from 'prop-types';
 
-
 const GroceryItemComponent = ({ item, handleEditItem, handleDeleteItem }) => {
   const [isEditing, setIsEditing] = useState(false);
   const [newItem, setNewItem] = useState(item.name);
@@ -57,4 +56,5 @@ GroceryItemComponent.propTypes = {
   handleEditItem: PropTypes.any,
   handleDeleteItem: PropTypes.any,
 }
+
 export default GroceryItemComponent;
